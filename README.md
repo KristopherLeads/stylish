@@ -1,5 +1,6 @@
 <div align="center">
   <h1><a href="https://github.com/KristopherLeads/stylish"><img alt="Stylish" src="images/stylish.png" width=600/></a></h1>
+</div>
 
 **The World's First AI-Powered Markdown Editor Named Stylish**
 
