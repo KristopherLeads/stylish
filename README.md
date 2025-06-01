@@ -103,9 +103,6 @@ Example style guide structure:
 
 1. Paste your markdown content in the input area
 2. Select a style guide from the dropdown
-3. Choose either:
-   - **Process Content**: Get AI-improved version
-   - **Analyze Only**: Get compliance analysis without changes
 
 ### API Endpoints
 
@@ -131,8 +128,7 @@ markdown-style-processor/
 │   └── markdown_processor.py  # Markdown utilities
 ├── templates/            # HTML templates
 ├── static/              # CSS, JS, and other static files
-├── style_guides/        # Style guide storage
-└── tests/              # Unit tests (coming soon)
+└── style_guides/        # Style guide storage
 ```
 
 ### Running in Development
