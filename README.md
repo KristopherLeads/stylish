@@ -1,4 +1,6 @@
-# Stylish
+<div align="center">
+  <h1><a href="https://github.com/KristopherLeads/stylish"><img alt="Stylish" src="images/stylish.png" width=600/></a></h1>
+
 **The World's First AI-Powered Markdown Editor Named Stylish**
 
 It may not be the first AI-powered markdown editor, but this artisinal application coded in Python, Flask, JavaScript, and CSS/HTML definitely exists. This is a local web application that uses OpenAI to process and improve markdown articles according to user-defined custom style guides.
