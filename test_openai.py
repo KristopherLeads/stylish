@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 This is a simple test script to verify OpenAI API connection
-Run this in your project directory with: python3 test_openai.py
+Run this in your project directory with python3 test_openai.py
 """
 
 import os
