@@ -8,13 +8,10 @@ It may not be the first AI-powered markdown editor, but this artisinal applicati
 
 ## Features
 
-- **AI-Powered Processing**: Uses OpenAI's GPT models to process markdown content
-- **Custom Style Guides**: Create and manage multiple style guides for different content types
+- **AI-Powered Processing**: Stylish uses OpenAI's GPT models to process markdown content
+- **Custom Style Guides**: You can create and manage multiple style guides for different content types
 - **Content Analysis**: Analyze content for style guide compliance without making changes
-- **Real-time Processing**: Process content instantly through a clean web interface
-- **Validation**: Built-in markdown validation and issue detection
-- **Export Results**: Copy processed content to clipboard
-- **Responsive Design**: Works on desktop and mobile devices
+- **Validation**: Built-in markdown validation and issue detection finds common issues
 
 ## Quick Start
 
@@ -54,7 +51,7 @@ cp .env.example .env
 python3 app.py
 ```
 
-6. Open your browser and navigate to `http://127.0.0.1:5000`
+6. Open your browser of choice and navigate to `http://127.0.0.1:5000`
 
 ## Configuration
 
@@ -78,12 +75,6 @@ Style guides are stored in the `style_guides/` directory as markdown files. You 
 ## Usage
 
 ### Creating a Style Guide
-
-1. Click "New Style Guide" in the web interface
-2. Provide a name (used as filename)
-3. Write your style guide in markdown format
-4. Save the style guide
-
 Example style guide structure:
 ```markdown
 # Technical Writing Style Guide
@@ -100,12 +91,10 @@ Example style guide structure:
 ```
 
 ### Processing Content
-
 1. Paste your markdown content in the input area
 2. Select a style guide from the dropdown
 
 ### API Endpoints
-
 The application provides REST API endpoints:
 
 - `GET /health` - Health check
@@ -119,26 +108,27 @@ The application provides REST API endpoints:
 ### Project Structure
 
 ```
-markdown-style-processor/
-├── app.py                 # Main Flask application
-├── config.py             # Configuration settings
-├── requirements.txt      # Python dependencies
-├── utils/
-│   ├── openai_client.py  # OpenAI integration
-│   └── markdown_processor.py  # Markdown utilities
-├── templates/            # HTML templates
-├── static/              # CSS, JS, and other static files
-└── style_guides/        # Style guide storage
+stylish/
+├── .env-example
+├── README.md
+├── app.py
+├── config.py
+├── requirements.txt
+├── test_openai.py
+├── static/
+│   ├── css/
+│   │   └── style.css
+│   └── js/
+│       └── main.js
+├── style_guides/
+│   └── default.md
+├── templates/
+│   ├── base.html
+│   └── index.html
+└── utils/
+    ├── markdown_processor.py
+    └── openai_client.py
 ```
-
-### Running in Development
-
-```bash
-export FLASK_CONFIG=development
-python app.py
-```
-
-The application will run with debug mode enabled and auto-reload on file changes.
 
 ### Testing
 
@@ -171,10 +161,11 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 **OpenAI API Key Not Working**
 - Verify your API key is correct and has sufficient credits
 - Check that the key is properly set in your `.env` file
+- Ensure that in the process of setting up your `.env` file, you correctly copied it and changed the name from `.example-env` to `.env`
 
 **OpenAI Issue with Keyword, e.g. Proxies**
 - This is a [known issue](https://community.openai.com/t/error-with-openai-1-56-0-client-init-got-an-unexpected-keyword-argument-proxies/1040332/90) - 1.55.3 was tested to work fine and was the version I used for all testing.
-- To install 1.55.3, simply:
+- To install 1.55.3, use this command:
 
 ```bash
 pip install openai==1.55.3
@@ -182,19 +173,10 @@ pip install openai==1.55.3
 
 **Style Guide Not Found**
 - Ensure the style guide file exists in the `style_guides/` directory
-- Check that the filename matches exactly (case-sensitive)
+- Check that the filename matches exactly
 
 **Processing Takes Too Long**
-- Large content may take longer to process
-- Consider breaking large documents into smaller sections
+- Large content may take longer to process via OpenAI - if you keep failing processing, consider breaking large documents into smaller sections
 
 **Memory Issues**
 - Restart the application if you encounter memory issues
-- Consider using a more powerful OpenAI model for better performance
-
-### Support
-
-For support and questions:
-- Open an issue on GitHub
-- Check existing issues for similar problems
-- Review the documentation above
