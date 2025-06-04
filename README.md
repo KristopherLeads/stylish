@@ -48,7 +48,7 @@ cp .env.example .env
 
 5. Run the application:
 ```bash
-python3 app.py
+python3 stylish.py
 ```
 
 6. Open your browser of choice and navigate to `http://127.0.0.1:5000`
@@ -111,7 +111,7 @@ The application provides REST API endpoints:
 stylish/
 ├── .env-example
 ├── README.md
-├── app.py
+├── stylish.py
 ├── config.py
 ├── requirements.txt
 ├── test_openai.py
