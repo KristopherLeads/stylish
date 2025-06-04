@@ -12,7 +12,7 @@ This style guide provides general guidelines for writing clear, consistent, and 
 - Avoid jargon unless necessary and always define technical terms
 
 ### Grammar and Style
-- Use sentence case for all headings
+- Use title case for all headings (e.g. This Is Title Case)
 - Spell out numbers under 10, use numerals for 10 and above
 - Use the Oxford comma in lists
 - Write in present tense when possible
