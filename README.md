@@ -130,6 +130,8 @@ stylish/
 │   │   └── style.css
 │   └── js/
 │       └── main.js
+│   └── images/
+│       └── stylish-light.png
 ├── style_guides/
 │   └── default.md
 ├── templates/
