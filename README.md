@@ -55,6 +55,14 @@ python3 stylish.py
 
 6. Open your browser of choice and navigate to `http://127.0.0.1:5000`
 
+### Shutting Down
+To turn off the Stylish service, follow these steps:
+
+```bash
+Ctrl+C # This shuts down the web server
+deactivate # This shuts of the emulated environment
+```
+
 ## Configuration
 
 ### Environment Variables
