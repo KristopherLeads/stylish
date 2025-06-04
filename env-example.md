@@ -1,5 +1,5 @@
 # Note: you MUST rename this file from .env-example.md to .env during initial setup
-# If you see this warning and your file is still named .env-example after inserting keys, rename the file
+# If you see this warning and your file is still named .env-example.md after inserting keys, rename the file
 
 # OpenAI Configuration
 OPENAI_API_KEY=YOUROPENAIKEY
