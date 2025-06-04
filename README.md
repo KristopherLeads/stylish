@@ -26,6 +26,7 @@ It may not be the first AI-powered markdown editor, but this artisinal applicati
 ```bash
 git clone https://github.com/KristopherLeads/stylish
 cd stylish
+# If using MacOS Github desktop, a better command is likely: cd Documents/Github/Stylish
 ```
 
 2. Create a virtual environment:
