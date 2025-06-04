@@ -44,7 +44,7 @@ pip install -r requirements.txt
 ```bash
 cp env-example.md .env
 nano .env
-# Edit .env and add your OpenAI API key
+# Edit .env and add your OpenAI API key and Flask string
 ```
 
 5. Run the application:
