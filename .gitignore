@@ -1,0 +1,8 @@
+# Ignore .env files
+*.env
+
+# All DS_Store files
+*.DS_Store
+
+# All local .CSV files
+*.csv
